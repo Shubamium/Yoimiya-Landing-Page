@@ -91,7 +91,7 @@ body , button{
         justify-content: center;
         align-items: baseline;
 
-        padding: 0 10%;
+        padding-left: 10%;
         
         opacity: 0;
         animation: fade-in 2s ease-in 1000ms;
@@ -124,18 +124,18 @@ body , button{
 
         .title .name img{
             max-width: 100%;
-            filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(-20deg) brightness(95%) contrast(80%) drop-shadow(0px 0px 25px #BF382C);
+            filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(-20deg) brightness(95%) contrast(80%) drop-shadow(0px 0px 25px #BF382C) drop-shadow(6px 2px 0px #2a2235);
         }
 
         .main-icon{
-
         }
 
     .title-content .subtitle{
         margin: 10px 0;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap:nowrap;
         align-items: center;
+        width: 120%;
         gap: 0 1em;
     }
 
