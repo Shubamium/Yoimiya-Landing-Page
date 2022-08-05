@@ -32,7 +32,7 @@ body , button{
     
 }
     .bg-blur{
-        filter: grayscale(.1) blur(2px);
+        filter: grayscale(.1) blur(5px);
 
     }
     .bg-main-anim{
