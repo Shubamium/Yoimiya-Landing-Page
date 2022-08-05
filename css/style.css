@@ -1,7 +1,25 @@
+
+@keyframes fade-in{
+    from{opacity: 0; }
+    to{opacity: 1;}
+}
+
+@keyframes rotate-in{
+    from{transform: rotate(-10deg);}
+    to{transform: rotate(0deg);}
+}
+@font-face {
+    font-family: 'Genshin';
+    src: url(../media/fonts/genshin.ttf);
+}
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+}
+
+body , button{
+    font-family: 'Genshin' , sans-serif;
 }
 
 .background{
@@ -10,12 +28,18 @@
     left: 0%;
     width: 100%;
     height: 100%;
-    filter: grayscale(.2) blur(3px) ;
+    animation: rotate-in 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: grayscale(.1) blur(2px);
+    overflow: hidden;
+    
 }
+
     .background video{
+        filter: grayscale(.2);
         width: 100%;
         height: 100%;
         object-fit: cover;
+        
     }
 
 
@@ -24,4 +48,139 @@
     width: 100%;
     min-height: 100vh;
     background-color: #BF382C;
+    overflow: hidden;
 }
+
+    .title-content{
+        position: relative;
+        z-index: 10;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 55%;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .title-content .right{
+        background-color: #bf382c00;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+
+        padding: 0 10%;
+        
+        opacity: 0;
+        animation: fade-in 2s ease-in 1000ms;
+        animation-fill-mode: forwards;
+        
+    }
+
+    .title-content .right h1{
+        font-size: 5rem;
+        text-shadow: 2px 0px #BF382C, 1px 2px #2D2C59, 0px 0px 15px black, 5px 0px 15px #b4b3ffbf,  -10px 0px 25px #ff4e3e96;
+        margin: .1em 0;
+    }
+
+    .title-content .stars{
+        font-size: 2rem;
+        color: #ffd943;
+        text-shadow: 0px 0px 10px #ffd943;
+        text-align: left;
+    }
+    
+    .title .name{
+        display: flex;
+        align-items: center;
+        object-fit: contain;
+        gap: 1em;
+        background-color: #c5544a36;
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+        padding: .2rem 1rem;
+    }
+
+        .title .name img{
+            max-width: 15%;
+            filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(-20deg) brightness(95%) contrast(80%) drop-shadow(0px 0px 25px #BF382C);
+        }
+
+        .main-icon{
+
+        }
+
+    .title-content .subtitle{
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0 1em;
+    }
+
+        .title-content .subtitle hr{
+                width: 10%;
+                height: 1px;
+                margin:0;
+                color: white;
+        }
+
+    .glow{
+        text-shadow: 0px 0px 5px #b4b3ff, 0px 0px 25px #BF382C;
+    }
+
+    .box-glow{
+        filter: drop-shadow(0px 0px 25px #BF382C);
+    }
+
+    .title-content .fill{
+        box-shadow: 0px 0px 15px #b4b3ff38;
+        background-color: #BF4B4B;
+        color: white;
+        padding: .4em;
+        text-shadow: none;
+    }
+
+    .btns{
+        padding: .5em 0;
+        font-size: 1.1rem;
+    }
+        .btn{
+            min-width: 150px;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+        }
+
+        .transparent-btn{
+            padding: 1em 20px;
+           
+            background-color: transparent;
+            color: white;
+            
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+
+        .filled-btn{
+            padding: 1em 2em;
+            background-color: #BF4B4B;
+            color: white;
+
+            border: none;
+            border-radius: 4px;
+        }
+        
+        .transparent-btn:hover{
+            background-color: #7d2727a2;
+            box-shadow: 0px 0px 5px #b4b3ff;
+            transition: all 200ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        .filled-btn:hover{
+            background-color: #7d2727;
+            box-shadow: 0px 0px 5px #dd655b;
+            transition: all 200ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
