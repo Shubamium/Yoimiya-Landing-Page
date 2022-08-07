@@ -13,10 +13,7 @@ function audioInit(audioPlayer){
     let playButton = audioPlayer.getElementsByClassName("play")[0];
     let pauseButton = audioPlayer.getElementsByClassName("pause")[0];
      
-    audioSource.oncanplay = () => {
-           switchElements(isPlaying(audioSource), playButton, pauseButton);
-        };   
-
+ 
     audioSource.onended = () => {
         switchElements(true, playButton, pauseButton);
         console.log("audioEnded");
