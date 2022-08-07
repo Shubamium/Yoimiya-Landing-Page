@@ -12,15 +12,17 @@ function audioInit(audioPlayer){
     let audioSource = audioPlayer.getElementsByTagName("audio")[0];
     let playButton = audioPlayer.getElementsByClassName("play")[0];
     let pauseButton = audioPlayer.getElementsByClassName("pause")[0];
-    
-    if(!audioSource.hasAttribute('autoplay')){
-        switchElements(isPlaying(audioSource), playButton, pauseButton)
-    }else{
-        switchElements(true, playButton, pauseButton)
-        
-    }
+     
+    audioSource.oncanplay = () => {
+           switchElements(isPlaying(audioSource), playButton, pauseButton);
+        };   
 
-    console.log(audioSource);
+    audioSource.onended = () => {
+        switchElements(true, playButton, pauseButton);
+        console.log("audioEnded");
+
+    };   
+
     playButton.addEventListener("click",function(){
         if(playButton.classList.contains('ap-start-over')){
             audioSource.currentTime = 0;

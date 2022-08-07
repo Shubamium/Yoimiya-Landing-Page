@@ -20,6 +20,10 @@
     box-sizing: border-box;
 }
 
+.relative{
+    position: relative;
+}
+
 body , button{
     font-family: 'Genshin' , sans-serif;
 }
@@ -56,6 +60,10 @@ body , button{
 
 .hidden{
     display: none;
+}
+
+.z20{
+    z-index: 20;
 }
 
 .background{
@@ -165,6 +173,7 @@ body , button{
         }
 
         .main-icon{
+
         }
 
     .title-content .subtitle{
@@ -247,7 +256,7 @@ body , button{
         }
         
 
-.about-1{
+.quote-1{
     position: relative;
     background-color: #2D2C59;
     color: white;
@@ -255,7 +264,12 @@ body , button{
     padding: 10em 0;
 }
 
-    .about-1 h2{
+    .quote-1 h2{
         font-size: 3rem;
         text-shadow: 4px 2px 0px #1e1d3a;
     }
+   
+
+.about-general{
+    
+}
