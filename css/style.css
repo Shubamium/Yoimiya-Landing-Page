@@ -8,10 +8,12 @@
     from{transform: rotate(-10deg);}
     to{transform: rotate(0deg);}
 }
+
 @font-face {
     font-family: 'Genshin';
     src: url(../media/fonts/genshin.ttf);
 }
+
 *{
     padding: 0%;
     margin: 0%;
@@ -20,6 +22,40 @@
 
 body , button{
     font-family: 'Genshin' , sans-serif;
+}
+
+.absolute-br{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 200;
+}
+
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-player{
+   
+}
+    .audio-player button{
+        padding: 10px;
+        min-width: 50px;
+    }
+
+    .audio-player i{
+        font-size: 20px;
+    }
+
+.white{
+    color:white;
+}
+
+.hidden{
+    display: none;
 }
 
 .background{
@@ -56,6 +92,7 @@ body , button{
     .pattern-goldfish{
         background-image: url(../media/images/pattern-gold-fish.jpg);
         background-blend-mode: multiply;
+        background-size: 30%;
         opacity: .04;
     }
     .pattern-fan{
@@ -205,6 +242,10 @@ body , button{
             transition: all 200ms cubic-bezier(0.19, 1, 0.22, 1);
         }
 
+        .circle-border{
+            border-radius: 50%;
+        }
+        
 
 .about-1{
     position: relative;

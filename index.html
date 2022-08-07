@@ -13,13 +13,11 @@
     <!--Header-->
     <header class="head"></header>
     
-        <audio preload="auto" allow="autoplay" autoplay loop>
-            <source src="media/audio/Eternity in a Moment.mp3" type="audio/mp3">
-        </audio>
+       
     <!--Title Section-->
     <section class="title">
         <div class="background bg-blur bg-main-anim">
-            <video src="media/videos/YoiLive-Comp.mp4" poster="media/images/video thumb.png" autoplay loop muted playsinline preload="auto" ></video>
+            <video src="media/videos/YoiLiveWebComp.webm" poster="media/images/video thumb.png" autoplay loop muted playsinline preload="auto" ></video>
         </div>
 
         <div class="title-content">
@@ -50,8 +48,22 @@
                     <button class="btn filled-btn">Guides</button>
                     <button class="btn transparent-btn">Learn More</button>
                 </div>
+                
 
             </div>
+        </div>
+        
+        <div class="absolute-br">
+
+            <!--Audio Player-->
+            <div class="audio-player ap-small glow">
+                <button class="play ap-start-over transparent-btn circle-border"><i class="fa-solid fa-music white"></i></button>
+                <audio preload="auto" allow="autoplay" autoplay loop>
+                    <source src="media/audio/Eternity in a Moment.mp3" type="audio/mp3">
+                </audio>
+                <button class="pause transparent-btn circle-border"><i class="fa-solid fa-pause white"></i></i></button>
+            </div>
+          
         </div>
     </section>
     
@@ -63,5 +75,8 @@
         <p class="subtitle"></p>
     </section>
 
+
+    <!--Scripts-->
+    <script src="scripts/audioplayer.js"></script>
 </body>
 </html>
