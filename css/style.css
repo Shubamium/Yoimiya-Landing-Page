@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 @keyframes fade-in{
     from{opacity: 0; }
@@ -20,7 +21,13 @@
     box-sizing: border-box;
 }
 
+.alt-font{
+    font-family: 'Open Sans',sans-serif;
+}
 
+.maxw1300{
+    max-width: 1300px;
+}
 /*
     Color Selection
 */
@@ -41,19 +48,44 @@
     box-shadow: 0px -5px 100px #0e0e1c;
 }
 
+.lighter{
+    font-weight: 100;
+}
+
 .inshadow-top-strong{
     box-shadow: 0px -100px 100px #0e0e1ccc;
 }
 
 .shadow-all{
-    box-shadow: 0px 0px 5px #0e0e1c;
+    box-shadow: 0px 0px 8px #0e0e1c;
+}
+
+.shadow-all-blue{
+    box-shadow: 0px 0px 5px #b4b3ff;
+}
+
+.border-yellow{
+    border: 4px solid #F1BD81;
+}
+
+.text-shadow-all{
+    text-shadow: 0px 0px 5px #0e0e1c;
 }
 
 .mg1em{
     margin: 1em;
 }
+
 .pd1em{
     padding: 1em;
+}
+
+.mw40{
+    max-width: 40ch;
+}
+
+.mw60{
+    max-width: 60ch;
 }
 
 .relative{
@@ -151,6 +183,13 @@ body , button{
         
     } 
 
+    .pattern-flower{
+        background-image: url(../media/images/pattern-flower.jpg);
+        background-blend-mode: multiply;
+        opacity: .01;
+        
+    } 
+
 
 .title{
     position: relative;
@@ -203,7 +242,7 @@ body , button{
         display: grid;
         grid-template-columns: 1fr 100px;
         align-items: center;
-        background-color: #c5544a36;
+        background-color: #bf4b4b51;
         backdrop-filter: blur(5px);
         border-radius: 5px;
         padding: .2rem 1rem;
@@ -225,7 +264,7 @@ body , button{
     }
 
         .title-content .subtitle hr{
-                width: 10%;
+                width: 8%;
                 height: 1px;
                 margin:0;
                 color: white;
@@ -246,7 +285,8 @@ body , button{
 
     .title-content .fill{
         box-shadow: 0px 0px 15px #b4b3ff38;
-        background-color: #BF4B4B;
+        background-color: #272659;
+        border-radius: .5vw;
         color: white;
         padding: .4em;
         text-shadow: none;
@@ -328,7 +368,7 @@ body , button{
 }
 
 .about-general{
-    min-height: 180vh;
+    min-height: 220vh;
     background: linear-gradient(to bottom, #7d2727 , #B5392D , #F1BD81);
     position: relative;
     overflow: hidden;
@@ -409,6 +449,7 @@ body , button{
                 display: inline-block;
                 color: #F1BD81;
                 background-color: #7d2727;
+                font-size: 1.1rem;
             }
                 
             .info-stuff hr{
@@ -422,14 +463,14 @@ body , button{
                 text-align: center;
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
-                border: 2px solid #F1BD81;
+                border: 4px solid #F1BD81;
             }
                 .info-stuff .three-col .col:not(:last-child){
-                    border-right: 2px solid #1e1d3a;
+                    border-right: 4px solid #32231e;
                 }
 
                 .info-stuff .three-col h2{
-                    color: #32231e;
+                    color:  #32231e;
                     background-color: #ffd8ab;
                     width: 80%;
                     border-radius: 10px;
@@ -454,8 +495,40 @@ body , button{
                     width: 80px;
                     height: 80px;
                 }
+        
+        .info-stuff .va-section{
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            
+            background-color: #7d272788;
+            background-image: url(../media/images/yoi-namecard.png);
+            background-size: cover;
+            background-blend-mode:darken;
+
+            border: 3px solid #F1BD81;
+            border-radius: 5px;
+        }
+
+            .info-stuff .va-section p{
+                background-color: initial;
+                font-size: 1.25rem;
+                padding: .1em 0;
+            }
 
 
-
+    .char-intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .char-intro .icon{
+            background: #272659;
+        }
+        
+        .char-intro .dialogue{
+            border-radius: 2ch;
+            color: #32231e;
+        }
 
 
