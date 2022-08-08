@@ -92,7 +92,33 @@
     position: relative;
 }
 
+.audio-player{
+}
+    .audio-player button{
+        padding: 10px;
+        min-width: 50px;
+    }
 
+    .audio-player i{
+        font-size: 20px;
+    }
+
+    .ap-big{
+        width: 80px;
+        height: 80px;
+    }
+        .ap-big button{
+            border-color: #0e0e1c;
+            background-color: #0e0e1c55;
+            color: #0e0e1c;
+            width: 100%;
+            height: 100%;
+        }
+
+        .ap-big i{
+            font-size: 40px;
+        }
+    
 
 body , button{
     font-family: 'Genshin' , sans-serif;
@@ -112,18 +138,12 @@ body , button{
     align-items: center;
 }
 
-.audio-player{
-}
-    .audio-player button{
-        padding: 10px;
-        min-width: 50px;
-    }
-
-    .audio-player i{
-        font-size: 20px;
-    }
 
 .white{
+    color:white;
+}
+
+.black{
     color:white;
 }
 
@@ -532,3 +552,4 @@ body , button{
         }
 
 
+  
