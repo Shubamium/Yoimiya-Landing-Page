@@ -13,6 +13,9 @@ function audioInit(audioPlayer){
     let playButton = audioPlayer.getElementsByClassName("play")[0];
     let pauseButton = audioPlayer.getElementsByClassName("pause")[0];
      
+    if(audioSource.hasAttribute('autoplay')){
+        audioSource.volume = 0.5;
+    }
  
     audioSource.onended = () => {
         switchElements(true, playButton, pauseButton);
