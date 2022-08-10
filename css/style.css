@@ -40,6 +40,10 @@
     Color Selection
 */
 
+.light-yelow{
+    color: #ffd6a7;
+}
+
 .yellow{
     color: #F1BD81;
 }
@@ -51,6 +55,22 @@
 .red{
     color: #B5392D;
 }
+
+.blue{
+    color: #2D2C59;
+}
+
+.light-purple{
+    color: #c289dd;
+}
+.purple{
+    color: #8546a2;
+}
+
+.dark-brown{
+    color: #32231e;
+}
+
 
 .inshadow-top{
     box-shadow: 0px -5px 100px #0e0e1c;
