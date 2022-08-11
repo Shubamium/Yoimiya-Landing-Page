@@ -226,6 +226,10 @@ body , button{
     left: 0%;
 }
 
+.indent{
+    text-indent: 2em;
+}
+
 .bg-red{
     background-color: #7d2727;
 }
@@ -512,7 +516,7 @@ body , button{
 }
 
     .quote-1 h2{
-        font-size: 3rem;
+        font-size: 2.4rem;
         text-shadow: 4px 2px 0px #1e1d3a;
     }
    
