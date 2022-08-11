@@ -33,6 +33,10 @@
     opacity: .2;
 }
 
+q{
+    ;
+}
+
 .maxw1300{
     max-width: 1300px;
 }
@@ -745,4 +749,5 @@ body , button{
 
 .hidden{
     display: none;
+    visibility:collapse;
 }

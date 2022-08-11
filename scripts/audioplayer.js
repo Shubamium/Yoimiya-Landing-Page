@@ -36,6 +36,12 @@ function audioInit(audioPlayer){
         audioSource.pause();
     })
     
+    /* Disable on hide [Status: Not Working]
+    audioPlayer.addEventListener("visibilitychange", () => {
+        switchElements(isPlaying(audioSource), playButton, pauseButton)
+        audioSource.pause();
+        audioSource.currentTime = 0;
+    })*/
 }
 
 function switchElements(state, onElement , offElement){
