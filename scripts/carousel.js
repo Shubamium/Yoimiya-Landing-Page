@@ -27,6 +27,7 @@ function carouselStart(carousel, carouselId){
     let nextButton = carouselControls.getElementsByClassName('next')[0];
     let pageIndicator = carouselControls.getElementsByClassName('indicator')[0];
 
+    let setPageButtons = carousel.getElementsByClassName('set-page');
    // setTheActivePage(carouselItems,toSetActive);
     
    
@@ -45,7 +46,7 @@ function carouselStart(carousel, carouselId){
         if(pageIndicator != null) pageIndicator.textContent = ++targetPageId;
 
 
-        console.log(carouselCurrentPageIds[0]);
+        //console.log(carouselCurrentPageIds[0]);
 
     });
 
@@ -62,10 +63,33 @@ function carouselStart(carousel, carouselId){
         if(pageIndicator != null) pageIndicator.textContent = ++targetPageId;
 
 
-        console.log(carouselCurrentPageIds[0]);
+        //console.log(carouselCurrentPageIds[0]);
     });
 
 
+    //How to use ---- 
+    //First class = set-page
+    //Second class = [$page-number]
+    //Specific-Page Button
+    for(let i = 0; i < setPageButtons.length; i++){
+        //Iterate through all the set-page buttons
+        setPageButtons[i].addEventListener('click',() => {
+            
+            //Get the target page
+            let targetPage = setPageButtons[i].classList[1];
+
+            //Save the current page
+            carouselCurrentPageIds[carouselId] = targetPage - 1;
+        
+            //Set the current page
+            setTheActivePage(carouselItems, targetPage);
+    
+            //Set the page number
+            if(pageIndicator != null) pageIndicator.textContent = ++targetPage;
+            
+            setTheActivePage(carouselItems,targetPage);
+        });
+    }
 
 }
 
