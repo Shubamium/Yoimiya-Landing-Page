@@ -33,6 +33,34 @@
     opacity: .2;
 }
 
+.maxh-100p{
+    max-height: 100%;
+}
+
+.minh30vh{
+    min-height: 30vh;
+}
+
+.minh50vh{
+    min-height: 50vh;
+}
+
+.minh70vh{
+    min-height: 70vh;
+}
+
+.minh500px{
+    min-height: 500px;
+}
+
+.minh700px{
+    min-height: 700px;
+}
+
+.minh1000px{
+    min-height: 1000px;
+}
+
 
 .maxw1300{
     max-width: 1300px;
@@ -55,6 +83,17 @@
 
 .red{
     color: #B5392D;
+}
+
+.red-emphasis{
+    color: #F1BD81;
+    background-color: #B5392D;
+    padding: 2px;
+    border-radius: .5vw;
+}
+
+.dark-red{
+    color: #a24635
 }
 
 .blue{
@@ -123,12 +162,20 @@
     text-shadow: 0px 0px 5px #0e0e1c;
 }
 
+.text-shadow-slight{
+    text-shadow: 0px 0px 2px #0e0e1c;
+}
+
 .mg1em{
     margin: 1em;
 }
 
 .mg-center{
     margin: 1em auto;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .pd1em{
@@ -210,6 +257,13 @@ body , button{
     z-index: 200;
 }
 
+.absolute-rc{
+    position: absolute;
+    bottom: 0%;
+    right: -20%;
+    z-index: 200;
+}
+
 .absolute{
     position: absolute;
 }
@@ -227,7 +281,11 @@ body , button{
 }
 
 .indent{
-    text-indent: 2em;
+    text-indent: 5rem;
+}
+
+.justify{
+    text-align: justify;
 }
 
 .bg-red{
@@ -248,6 +306,11 @@ body , button{
     align-items: center;
 }
 
+.flex-end{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
 
 .white{
     color:white;
@@ -259,6 +322,10 @@ body , button{
 
 .v-hidden{
     visibility: hidden;
+}
+
+.ov-hidden{
+    overflow: hidden;
 }
 
 .z20{
@@ -709,6 +776,27 @@ body , button{
 
     padding: 15em 2em;
 }
+    .about-story-panel-intro{
+        background: rgb(241,147,111);
+        background: linear-gradient(90deg, rgba(241,147,111,1) 0%, rgba(226,118,87,1) 22%, rgba(198,86,62,1) 83%); background: linear-gradient(to bottom, rgba(241,147,111,1) 0%, rgba(226,118,87,1) 51%, rgba(198,86,62,1) 100%);
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .about-story-panel-intro h2{
+            font-size: 4rem;
+        }
+
+        .about-story-panel-intro p{
+            padding: 10px 0;
+        }
+
+        .line-top{
+            border-top: 2px dashed #32231e;
+        }
+
     .about-story-panel{
         background-color: #7d2727;
     }
