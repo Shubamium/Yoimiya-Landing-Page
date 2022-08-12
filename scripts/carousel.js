@@ -7,7 +7,7 @@ function initCarousel(){
 
     //Get Every Carousels in the DOM
     let carousels = document.getElementsByClassName('carousel');
-
+    //console.log(carousels);
     //Loop through each carousel and initialize it
     for(let i = 0; i < carousels.length; i++){
         carouselStart(carousels[i] , i);    
@@ -32,7 +32,8 @@ function carouselStart(carousel, carouselId){
     
    
 
-    //Set the controls function
+   //Set the controls function
+       if(prevButton != null)
     prevButton.addEventListener('click',() =>{
         //Decrement the carousels Current page id
         let targetPageId = carouselCurrentPageIds[carouselId];
@@ -50,6 +51,7 @@ function carouselStart(carousel, carouselId){
 
     });
 
+        if(nextButton != null)
     nextButton.addEventListener('click',() =>{
         //Increment the carousels Current page id
         let targetPageId = carouselCurrentPageIds[carouselId];
@@ -71,6 +73,7 @@ function carouselStart(carousel, carouselId){
     //First class = set-page
     //Second class = [$page-number]
     //Specific-Page Button
+    if(setPageButtons != null)
     for(let i = 0; i < setPageButtons.length; i++){
         //Iterate through all the set-page buttons
         setPageButtons[i].addEventListener('click',() => {
@@ -79,15 +82,15 @@ function carouselStart(carousel, carouselId){
             let targetPage = setPageButtons[i].classList[1];
 
             //Save the current page
-            carouselCurrentPageIds[carouselId] = targetPage - 1;
-        
+            carouselCurrentPageIds[carouselId] = targetPage - Number(1);
+            
+            console.log(targetPage - Number(1));
             //Set the current page
-            setTheActivePage(carouselItems, targetPage);
+            setTheActivePage(carouselItems, carouselCurrentPageIds[carouselId]);
     
             //Set the page number
             if(pageIndicator != null) pageIndicator.textContent = ++targetPage;
             
-            setTheActivePage(carouselItems,targetPage);
         });
     }
 

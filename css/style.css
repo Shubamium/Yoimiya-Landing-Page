@@ -182,6 +182,10 @@
     padding: 1em;
 }
 
+.pd1em-inline{
+    padding: 1em 4em;
+}
+
 .pd4em-top{
     padding: 4em 0;
 }
@@ -276,7 +280,7 @@ body , button{
 
 .absolute-tl-over{
     position: absolute;
-    top: -40%;
+    top:  -60px;
     left: 0%;
 }
 
@@ -286,6 +290,10 @@ body , button{
 
 .justify{
     text-align: justify;
+}
+
+.bg-orange{
+    background-color: #B5392D;
 }
 
 .bg-red{
@@ -352,6 +360,22 @@ body , button{
     align-items: center;
 }
 
+.grid-auto-col{
+    display: flex;
+    
+}
+
+
+.dialogue-section-double{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 200px 1fr 200px;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+}
+
+
 .background{
     position: absolute;
     top: 0%;
@@ -397,6 +421,12 @@ body , button{
         background-image: url(../media/images/pattern-fan.jpg);
         background-blend-mode: multiply;
         opacity: .04;
+        
+    } 
+    .pattern-fan-opaque{
+        background-image: url(../media/images/pattern-fan.jpg);
+        background-blend-mode: multiply;
+        opacity: .06;
         
     } 
 
@@ -660,11 +690,12 @@ body , button{
                     display: inline-block;
                 }
                 
-                .name h2:last-child{
+                .name marquee{
                     background-color: #F1BD81;
                     color: #572f24;
                     font-size: 1.5rem;
                     font-weight: lighter;
+                    max-width: 100%;
                 }
                 
         .info-stuff{
@@ -751,18 +782,26 @@ body , button{
         justify-content: center;
         align-items: center;
     }
-        .char-intro .icon{
-            background: #272659;
+        .icon{
             width: 300px;
             height: 300px;
         }
 
-        .char-intro .icon img{
+        .icon-big{
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .bg-blue{
+            background: #272659;
+        }
+
+        .icon img , .icon-big img{
             width: 100%;
             height: 100%;
         }
         
-        .char-intro .dialogue{
+        .dialogue{
             border-radius: 2ch;
             color: #32231e;
         }
@@ -840,3 +879,30 @@ body , button{
     display: none;
     visibility:collapse;
 }
+
+
+.about-other{
+    background-color: #2D2C59;
+}
+
+    .dialogue-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .voice-selection{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: wrap;
+            max-height: 150px;
+        }
+
+        .voice-selection input{
+            object-fit: contain;
+            max-height: 100%;
+            width: 100%;
+        }
+        .voice-selection input:hover{
+            filter: drop-shadow(2px 0px 2px black) brightness(.5);
+        }
