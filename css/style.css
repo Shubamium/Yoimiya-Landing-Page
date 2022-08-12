@@ -300,8 +300,20 @@ body , button{
     background-color: #7d2727;
 }
 
+.bg-bright-orange{
+    background-color: #BF382C;
+}
+
+.bg-yellow{
+    background-color: #ffd6a7;
+}
+
 .bg-dark{
     background-color: #313131;
+}
+
+.bg-light-blue{
+    background-color: #b4b3ff;
 }
 
 .rounded{
