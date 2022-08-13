@@ -108,7 +108,7 @@
 }
 
 .dark-brown{
-    color: #32231e;
+    color: #5b1717;
 }
 
 
@@ -299,6 +299,10 @@ body , button{
 .bg-red{
     background-color: #7d2727;
 }
+.bg-red-tr{
+    background-color: #7d272773;
+}
+
 
 .bg-bright-orange{
     background-color: #BF382C;
@@ -310,6 +314,10 @@ body , button{
 
 .bg-dark{
     background-color: #313131;
+}
+
+.bg-brown{
+    background-color: #5b1717;
 }
 
 .bg-light-blue{
@@ -918,3 +926,26 @@ body , button{
         .voice-selection input:hover{
             filter: drop-shadow(2px 0px 2px black) brightness(.5);
         }
+
+    ::-webkit-scrollbar{
+        background-color: #F2622E;
+        box-shadow: -5px 0px 10px black;
+        height: 13px;
+    }
+
+    ::-webkit-scrollbar-track{
+        padding: .1em;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        border: 2px solid transparent;
+        background-clip: padding-box;
+        background-color: #5b1717;
+        border-radius: 2vh;
+        
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        cursor: pointer;
+        background-color: #3e0f0f;
+    }
