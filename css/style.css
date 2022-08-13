@@ -29,6 +29,10 @@
     font-size: 1.5rem;
 }
 
+.fs-bigger{
+    font-size: 4.5rem;
+}
+
 .vague{
     opacity: .2;
 }
@@ -949,3 +953,17 @@ body , button{
         cursor: pointer;
         background-color: #3e0f0f;
     }
+
+
+.about-trivia{
+    background: linear-gradient(to bottom,#BF382C, #7d2727 );
+}
+
+    .trivia{
+        flex-direction: column;
+    }
+        .trivia img{
+            max-height: 400px;
+        }
+
+    
