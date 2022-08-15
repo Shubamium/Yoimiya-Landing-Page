@@ -487,7 +487,7 @@ body , button{
     top: 0;
     background-color: transparent;
     width: 100%;
-    height: min(100px, 70px);
+    height: 70px;
     transition: background-color 250ms ease-out;
 }
 
@@ -539,6 +539,7 @@ body , button{
             padding-top: 1.4em;
             margin: .3em;
             height: 100%;
+            text-shadow: 5px 0px 12px black;
         }
 
         .nav-container li:hover a::after{
@@ -552,6 +553,19 @@ body , button{
             height: 5%;
             animation: expand 250ms ease-out;
         }
+
+        .selected::after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background-color: #be9464;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5%;
+            animation: expand 250ms ease-out;
+        }
+
         @keyframes expand {
             from{
                 width: 0%;
@@ -980,7 +994,7 @@ body , button{
             }
 
         .img-frame{
-            border: 10px solid white;
+            border: 10px solid rgb(238, 233, 233);
         }
 
         .story-text{
