@@ -72,5 +72,17 @@
 
     .gallery-container{
         width: 1000px;
-        height: 440vh;
+        height: 2800px;
+    }
+
+.gallery-video{
+    background-color: #2D2C59;
+    padding-top: 100px;
+}
+
+    .videos{
+        display: flex;
+        justify-content: center;
+        padding: 4em;
+        gap:4rem
     }
