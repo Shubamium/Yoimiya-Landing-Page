@@ -1,0 +1,24 @@
+.icon-small{
+    display: block;
+}
+
+body{
+    background-color: #2D2C59;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    height: 500vh;
+    background-color: #31313138;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.content-head{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background-color: #313144;
+}
+    .content-head .text-part{
+        
+    }

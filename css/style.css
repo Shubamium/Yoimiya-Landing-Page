@@ -15,6 +15,9 @@
     src: url(../media/fonts/genshin.ttf);
 }
 
+.inline{
+    display: inline;
+}
 *{
     padding: 0%;
     margin: 0%;
@@ -102,7 +105,7 @@ a{
 }
 
 .dark-red{
-    color: #a24635
+    color: #a24635;
 }
 
 .blue{
@@ -120,7 +123,11 @@ a{
     color: #5b1717;
 }
 
+.gradient-tr-bottom{
 
+    background:linear-gradient(to bottom, black, transparent);
+
+}
 .inshadow-top{
     box-shadow: 0px -5px 100px #0e0e1c;
 }
@@ -200,8 +207,12 @@ a{
     padding: 1em;
 }
 
+.pd1em-top{
+    padding-top: 1em;
+}
+
 .pd1em-inline{
-    padding: 1em 4em;
+    padding-inline: 1em;
 }
 
 .pd4em-top{
@@ -211,6 +222,9 @@ a{
 
 .pd-slight{
     padding: .3em;
+}
+.pd-slight-inline{
+    padding-inline: .3em;
 }
 
 .mw40{
@@ -426,7 +440,7 @@ body , button{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
+    background-repeat: repeat;
 }
     .bg-blur{
         filter: grayscale(.1) blur(5px);
@@ -514,6 +528,7 @@ body , button{
         }
 
         .flex-start{
+            display: flex;
             justify-content: flex-start;
             align-items: center;
         }
@@ -618,7 +633,7 @@ body , button{
         margin: .1em 0;
     }
 
-    .title-content .stars{
+    .stars{
         font-size: 2rem;
         color: #ffd943;
         text-shadow: 0px 0px 10px #ffd943;
