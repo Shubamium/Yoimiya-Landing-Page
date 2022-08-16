@@ -118,14 +118,15 @@ a{
 .purple{
     color: #8546a2;
 }
-
+.pd-center{
+    padding: 0 auto;
+}
 .dark-brown{
     color: #5b1717;
 }
 
 .gradient-tr-bottom{
-
-    background:linear-gradient(to bottom, black, transparent);
+    background-image:linear-gradient(to bottom, white, transparent);
 
 }
 .inshadow-top{
@@ -188,6 +189,9 @@ a{
 
 .mg-center{
     margin: 1em auto;
+}
+.pd-center{
+    padding: 1em auto;
 }
 
 .text-center{
