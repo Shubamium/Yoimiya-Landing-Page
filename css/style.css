@@ -125,6 +125,9 @@ a{
     color: #5b1717;
 }
 
+.overflow-show{
+    overflow: visible;
+}
 .gradient-tr-bottom{
     background-image:linear-gradient(to bottom, white, transparent);
 
