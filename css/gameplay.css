@@ -6,20 +6,33 @@ body{
     background-color: #2D2C59;
     height: fit-content;
 }
+
 .content{
     height: 2000px;
-    background-color: #31313138;
+    background-color:  #313144;
     overflow: hidden;
 }
 
 .container{
 
 }
+
 .content-head{
     display: grid;
     grid-template-columns: 300px 1fr;
-    background-color: #313144;
+    background-image:linear-gradient(to bottom, #313144, transparent);
+    min-height: 400px;
 }
+    .gradient-end::after{
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        bottom: 0%;
+        background-image: linear-gradient(to top, #313144, transparent);
+        
+    }
+
     .content-head .text-part h2{
         line-height: 80%;
         padding-top: 30px;

@@ -5,6 +5,17 @@
     to{opacity: 1;}
 }
 
+@keyframes fly-in{
+    from{
+        opacity: 0;
+        transform:translateY(100px); 
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0); 
+    }
+}
+
 @keyframes rotate-in{
     from{transform: rotate(-10deg);}
     to{transform: rotate(0deg);}
@@ -18,6 +29,15 @@
 .inline{
     display: inline;
 }
+
+
+.animate-fade-in{
+    animation: fade-in 1500ms ease-out;
+}
+.animate-fly-in{
+    animation: fly-in 1200ms ;
+}
+
 *{
     padding: 0%;
     margin: 0%;
@@ -125,6 +145,13 @@ a{
     color: #5b1717;
 }
 
+.mg-verti{
+    margin: 2em 0;
+}
+
+.mg-top{
+    margin: 1em 0;
+}
 .overflow-show{
     overflow: visible;
 }
