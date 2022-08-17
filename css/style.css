@@ -106,7 +106,7 @@ a{
     Color Selection
 */
 
-.light-yelow{
+.light-yellow{
     color: #ffd6a7;
 }
 
@@ -138,16 +138,21 @@ a{
 }
 
 
-
+.confined-img{
+    max-height: 100%;
+    max-width: 100%;
+}
 .light-purple{
     color: #c289dd;
 }
 .purple{
     color: #8546a2;
 }
+
 .pd-center{
     padding: 0 auto;
 }
+
 .dark-brown{
     color: #5b1717;
 }
@@ -379,6 +384,9 @@ body , button{
 .bg-dark-blue{
     background-color: #171b42;
 }
+.bg-mid-blue{
+    background-color: #3c4674;
+}
 .bg-bright-orange{
     background-color: #BF382C;
 }
@@ -493,6 +501,12 @@ body , button{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+}
+
+.grid-3-stretch{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
 }
 
 .grid-32{
