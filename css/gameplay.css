@@ -80,6 +80,7 @@ body{
     align-items: center;
     aspect-ratio: 1;
     position: relative;
+    overflow: hidden;
 }
 
     .item-slot .amount{
@@ -114,16 +115,20 @@ body{
 
     .cards{
         display: grid;
+        min-height: 0;
+        min-width: 0;
     }
     
         .card{      
             border-radius: 1vw;
             background-color: #3c4674;
+            min-height: 0;
+            min-width: 0;
         }
 
     .boss-upgrade{
         display: grid;
-        grid-template-columns: 60% 1fr 1fr;
+        grid-template-columns: 55% 1fr 1fr;
     }
 
     .single-item{
@@ -131,3 +136,23 @@ body{
         height: 100%;
     }
     
+
+.legendary{
+    border-bottom: 6px solid rgb(255, 187, 0);
+}
+
+.mythic{
+    border-bottom: 6px solid rgb(172, 86, 206);
+}
+
+.rare{
+    border-bottom: 6px solid rgb(0, 102, 255);
+}
+
+.uncommon{
+    border-bottom: 6px solid rgb(87, 129, 89);
+}
+
+.common{
+    border-bottom: 6px solid rgb(73, 73, 73);
+}

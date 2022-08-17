@@ -409,6 +409,9 @@ body , button{
     align-items: center;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .flex-stretch{
     display: flex;
     justify-content: stretch;
