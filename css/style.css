@@ -43,6 +43,7 @@
     margin: 0%;
     box-sizing: border-box;
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -55,6 +56,10 @@ a{
 
 .fs-big{
     font-size: 1.5rem;
+}
+
+.fs-large{
+    font-size: 2.25rem;
 }
 
 .fs-bigger{
@@ -131,6 +136,8 @@ a{
 .blue{
     color: #2D2C59;
 }
+
+
 
 .light-purple{
     color: #c289dd;
@@ -369,7 +376,9 @@ body , button{
     background-color: #7d272773;
 }
 
-
+.bg-dark-blue{
+    background-color: #171b42;
+}
 .bg-bright-orange{
     background-color: #BF382C;
 }
@@ -397,6 +406,25 @@ body , button{
 .flex-center{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.flex-stretch{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.flex-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-start{
+    display: flex;
+    justify-content:flex-start;
     align-items: center;
 }
 
@@ -445,6 +473,40 @@ body , button{
     justify-content: center;
     align-items: center;
 }
+
+.grid-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    aspect-ratio: 1;
+}
+
+.gap-small{
+    gap: .9em;
+}
+
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.grid-32{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-template-areas: 
+    "1 2"
+    "3 3";
+}
+
+.grid-area-1{ grid-area: "1";}
+.grid-area-2{ grid-area: "2";}
+.grid-area-3{ grid-area: "3"; grid-row: span 2; grid-column: span 2;}
+
+
+
 
 
 .grid-dialogue-box-rv{
