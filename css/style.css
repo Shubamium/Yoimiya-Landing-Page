@@ -178,6 +178,9 @@ a{
 .mg-verti{
     margin: 2em 0;
 }
+.mg-verti-slight{
+    margin: 1em 0;
+}
 
 .mg-top{
     margin: 1em 0;

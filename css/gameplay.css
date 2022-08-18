@@ -177,7 +177,11 @@ body{
     .skill-container{
         display: grid;
         grid-template-columns: 120px 1fr;
-        min-height: 80px;
         border-radius: 8px;
         width: 100%;
     }
+  
+
+.constellation{
+    background-color: #2D2C59;
+}
