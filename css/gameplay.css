@@ -131,7 +131,6 @@ body{
 
 .skills{
     background-color: #2D2C59;
-    min-height: 200vh;
     color: white;
 }
 
@@ -167,5 +166,18 @@ body{
     background-color: #2c2c3f;
     box-shadow: 0px 0px 5px black;
     border-radius: 20px;
-    
+    font-size: 3.4em;
 }
+
+
+.passives{
+    background-color: #2D2C59;
+}
+
+    .skill-container{
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        min-height: 80px;
+        border-radius: 8px;
+        width: 100%;
+    }

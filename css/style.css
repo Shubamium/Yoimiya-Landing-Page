@@ -58,6 +58,11 @@ a{
     font-style: italic;
 }
 
+.fs-small{
+    font-size: .8rem;
+}
+
+
 .fs-big{
     font-size: 1.5rem;
 }
@@ -146,6 +151,11 @@ a{
     max-height: 100%;
     max-width: 100%;
 }
+
+.img-stretch{
+    height: 100%;
+    width: 100%;
+}
 .light-purple{
     color: #c289dd;
 }
@@ -155,6 +165,10 @@ a{
 
 .pd-center{
     padding: 0 auto;
+}
+
+.pdr1em{
+    padding-right: 1em;
 }
 
 .dark-brown{
