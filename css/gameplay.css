@@ -210,3 +210,19 @@ body{
             list-style-type: decimal;
             text-align: left;
         }
+
+.teams{
+    background-color: #2D2C59;
+}
+    .member{
+        margin: 1em;
+    }
+        .team-member{
+            background-color: #313144;
+            border-radius: 20px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .team-member img{
+            max-height: 500px;
+        }
