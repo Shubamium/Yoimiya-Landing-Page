@@ -188,7 +188,6 @@ body{
 
 .weapons{
     background-color: #2D2C59;
-
 }
 
     .stats{
@@ -199,3 +198,15 @@ body{
     }
     .weapons-card{
     }
+
+.artifacts{
+    background-color: #2D2C59;
+}
+
+.priority{
+    padding-left: 2em;
+}
+        .priority li{
+            list-style-type: decimal;
+            text-align: left;
+        }

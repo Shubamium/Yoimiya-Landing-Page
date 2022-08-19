@@ -50,6 +50,10 @@ a{
     text-decoration: none;
 }
 
+.ordered{
+    list-style-type:decimal;
+}
+
 .alt-font{
     font-family: 'Open Sans',sans-serif;
 }
@@ -93,6 +97,10 @@ a{
 
 .minh70vh{
     min-height: 70vh;
+}
+
+.minh150px{
+    min-height: 150px;
 }
 
 .minh300px{
@@ -145,7 +153,9 @@ a{
 .dark-red{
     color: #a24635;
 }
-
+.cyan{
+    color: cyan;
+}
 .blue{
     color: #2D2C59;
 }
@@ -465,6 +475,14 @@ body , button{
     justify-content: stretch;
 }
 
+.justify-start{
+    justify-items: start;
+}
+
+.align-start{
+    align-items: start;
+}
+
 .flex-column{
     display: flex;
     justify-content: center;
@@ -539,6 +557,12 @@ body , button{
 .grid-3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
