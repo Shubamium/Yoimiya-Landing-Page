@@ -95,6 +95,10 @@ a{
     min-height: 70vh;
 }
 
+.minh300px{
+    min-height: 300px;
+}
+
 .minh500px{
     min-height: 500px;
 }
@@ -144,6 +148,12 @@ a{
 
 .blue{
     color: #2D2C59;
+}
+.brown{
+    color: #ffc72e;
+}
+.light-blue{
+    color: #87b5db;
 }
 
 
@@ -449,6 +459,10 @@ body , button{
     display: flex;
     justify-content: stretch;
     align-items: stretch;
+}
+
+.justify-stretch{
+    justify-content: stretch;
 }
 
 .flex-column{
