@@ -223,8 +223,13 @@ body{
             overflow: hidden;
             object-fit: cover;
         }
+        
         .team-member img{
             max-height: 500px;
         }
+
+.showcase{
+    background-color: #2D2C59;
+}
 
         
