@@ -387,6 +387,12 @@ body , button{
     right: 5%;
     z-index: 30;
 }
+.fixed-br{
+    position: fixed;
+    bottom: 20px;
+    right: 1%;
+    z-index: 30;
+}
 
 .absolute-center{
     position: absolute;

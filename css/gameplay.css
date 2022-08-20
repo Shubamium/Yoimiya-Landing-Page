@@ -223,7 +223,7 @@ body{
             overflow: hidden;
             object-fit: cover;
         }
-        
+
         .team-member img{
             max-height: 500px;
         }
@@ -232,4 +232,30 @@ body{
     background-color: #2D2C59;
 }
 
-        
+.top-button{
+    padding: .2em;
+    font-size: 40px;
+    color: white;
+    background-color: #2c2c3f;
+    border-radius: 2vw;
+
+}
+
+.top-button:hover{
+    cursor: pointer;
+
+}
+
+.top-button:hover::before{
+    content: 'To the top';
+    position: absolute;
+    bottom: 110%;
+    background-color: #202553;
+    font-size: 20px;
+    right: 20px;
+    width: 110px;
+    padding: .2em;
+    border-radius: 1vw;
+    border: 2px solid white;
+    text-align: right;
+}
