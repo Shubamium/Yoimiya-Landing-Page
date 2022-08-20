@@ -135,6 +135,9 @@ a{
     color: #F1BD81;
 }
 
+.green{
+    color: green;
+}
 .orange{
     color: #F2622E;
 }
@@ -202,8 +205,17 @@ a{
     margin: 1em 0;
 }
 
+.self-align-end{
+    align-self: flex-end;
+}
+.mg-indent{
+    margin-left: 2em;
+}
 .mg-top{
     margin: 1em 0;
+}
+.mg-top-only{
+    margin-top: 2em;
 }
 .overflow-show{
     overflow: visible;
@@ -324,6 +336,9 @@ a{
 
 .mw80{
     max-width: 80ch;
+}
+.mw90p{
+    max-width: 90%;
 }
 
 .relative{
