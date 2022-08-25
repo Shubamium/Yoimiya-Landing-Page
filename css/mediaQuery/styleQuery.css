@@ -1,0 +1,44 @@
+@media screen and (max-width:1024px){
+    .title-content{
+        grid-template-columns: 1px 1fr;
+    }
+
+    .quote-1 h2{
+        font-size: 1.5rem;
+    }
+
+    .char-info{
+        padding: 2em 10px;
+        grid-template-columns: 100px 1fr;
+    }
+
+    .info-content .mg1em{
+       margin: 1em 0; 
+    }
+
+    .three-col h2{
+        font-size: small;
+    }
+
+    .three-col p{
+        font-size: small;
+    }
+
+    
+}
+
+
+@media screen and (max-width:480px){
+    .info-stuff .three-col{
+        display: block;
+    }
+    .three-col h2{
+        font-size: small;
+        width: 100%;
+    }
+
+    .info-stuff .three-col .col{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
