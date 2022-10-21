@@ -26,6 +26,75 @@
     src: url(../media/fonts/genshin.ttf);
 }
 
+#preloader{
+    position:fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111129;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loaded{
+    opacity: 0;
+    transition:all 1400ms ease-out;
+    transition-delay: 1000ms;
+    pointer-events: none;
+}
+
+/* Removes Scrolling before page loaded  */
+.unloaded{
+    overflow: hidden;
+}
+
+#preloader .loading{
+    color:white;
+}
+
+#preloader .loading .loading-text{
+    font-size: 3rem;
+    margin:.4em 0;
+}
+
+#preloader img{
+    outline: 4px solid white;
+   animation: fade-in 250ms ease;
+   animation-fill-mode: forwards;
+}
+
+.loading .dot{
+    display: inline-block;
+    animation:dot-load 2500ms ease infinite;
+}
+
+.loading-text{
+    animation: flicker 1500ms infinite;
+}
+
+.dot:nth-child(2){
+    animation-delay: 350ms;
+}
+
+.dot:nth-child(3){
+    animation-delay: 500ms;
+}
+
+@keyframes dot-load {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-1.2rem);}
+    100%{transform: translateY(0px);}
+}
+@keyframes flicker{
+    0%{opacity: 0.3;}
+    50%{opacity: 1;}
+    100%{opacity: 0.3;}
+}
+
 .inline{
     display: inline;
 }
@@ -36,6 +105,7 @@
 }
 .animate-fly-in{
     animation: fly-in 1200ms ;
+    animation-delay: 1100ms;
 }
 
 *{
